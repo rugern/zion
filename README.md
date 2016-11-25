@@ -35,7 +35,8 @@ spark-submit main.py
 ## Datasets
 
 ### Movielens
-Download the dataset here: http://grouplens.org/datasets/movielens/
+Movielens dataset can be found here: http://grouplens.org/datasets/movielens/
+Tutorial for building a movie recommendation service with Spark: https://github.com/jadianes/spark-movie-lens
 
 Each line in the ratings dataset (ratings.csv) is formatted as: `userId,movieId,rating,timestamp`
 
