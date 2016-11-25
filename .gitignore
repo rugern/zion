@@ -1,0 +1,5 @@
+virtual/
+datasets/
+
+.DS_Store
+*.swp
