@@ -14,12 +14,12 @@ def extractData(raw, header, numberOfTokens):
             .cache()
 
 
-ratingsPath = os.path.join('datasets', 'ml-latest', 'ratings.csv')
+ratingsPath = os.path.join('datasets', 'ml-latest-small', 'ratings.csv')
 ratingsDataRaw = sc.textFile(ratingsPath)
 ratingsHeader = ratingsDataRaw.take(1)[0]
 ratingsData = extractData(ratingsDataRaw, ratingsHeader, 3)
 
-moviesPath = os.path.join('datasets', 'ml-latest', 'movies.csv')
+moviesPath = os.path.join('datasets', 'ml-latest-small', 'movies.csv')
 moviesDataRaw = sc.textFile(moviesPath)
 moviesHeader = moviesDataRaw.take(1)[0]
 moviesData = extractData(moviesDataRaw, moviesHeader, 3)
